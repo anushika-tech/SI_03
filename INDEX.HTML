@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="editor-container">
+    <div id="toolbar">
+      <button onclick="undo()">Undo</button>
+      <button onclick="redo()">Redo</button>
+      <button onclick="addComment()">Comment</button>
+      <button onclick="showHistory()">Show History</button>
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <div id="presence-indicators"></div>
+    <div id="notification-panel"></div>
+    <div id="comment-section"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
